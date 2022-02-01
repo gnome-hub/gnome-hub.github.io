@@ -110,9 +110,7 @@ section{
 }
 
 
-
-
-
+/* home page */
 .home{
     display: flex;
     background: url("../img/background.png") no-repeat center;
@@ -175,5 +173,66 @@ section{
     border-radius: 50%;
 }
 
+/* about us page */
+.about{
+    display: flex;
+    background: url("../img/background.png") no-repeat center;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Ubuntu', sans-serif;
+}
 
+
+/* gallery Page */
+.gallery .header {
+  text-align: center;
+  padding: 32px;
+  margin-top: 5px
+  color: white;
+}
+
+.gallery{
+    display: flex;
+    background: url("../img/background.png") no-repeat center;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Ubuntu', sans-serif;
+}
+.gallery .row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.gallery .column {
+  flex: 25%;
+  max-width: 50%;
+  padding: 0 4px;
+}
+
+.gallery .column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .gallery .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .gallery .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
 
