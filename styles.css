@@ -144,6 +144,14 @@ section{
     color: #C99700;
     font-weight: 500;
 }
+.home .home-content .text-4{
+    font-size: 15px;
+    margin: 15px;
+}
+.home .home-content .text-4 span{
+    color: #C99700;
+    font-weight: 500;
+}
 .home .home-content a{
     display: inline-block;
     background: #C99700;
@@ -190,7 +198,7 @@ section{
 .gallery .header {
   text-align: center;
   padding: 32px;
-  margin-top: 5px
+  margin-top: 5px;
   color: white;
 }
 
