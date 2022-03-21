@@ -4,7 +4,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   	<title>GnomeHub</title>
   	<link rel="stylesheet" type="text/css" href="styles.css"/>
-  	<link rel="icon" type="image/x-icon" href="img/logo.png"/>
+  	<link rel="icon" type="image/x-icon" href="img/favicon.png"/>
+    <link rel=”stylesheet” href=”https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css”rel=”nofollow” integrity=”sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm”>
   	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
@@ -12,9 +13,9 @@
     <script src="https://smtpjs.com/v3/smtp.js"></script>
 </head>
 <body>
-	<nav class="navbar">
+	<nav class="navbarcustom" >
         <div class="max-width">
-            <div class="logo"><a href="#">Gnome<span>Hub </span></a></div>
+            <div class="logo"><a href="index.html">Gnome<span>Hub </span></a></div>
             <ul class="menu">
                 <li><a href="index.html" class="menu-btn">Home</Home></a></li>
                 <li><a href="about.html" class="menu-btn">About</a></li>
@@ -28,13 +29,122 @@
             </div>
         </div>
     </nav>
+    <div class="about-section">
+        <h1 style="margin-top: 10%;color: white">What is GnomeHub?</h1>
+        <p> ______________________________ </p>
+        <p>GnomeHub is an open source, community developed gnome desktop envirnment based extension. Wether you are new to linux or an experienced programmer, it offers a customisable solution to recieve notifications, keep track of system stats and access custom widgets as per your needs.</p>
+    </div>
 
-    <section class="about" id="about" style="background-image: url('img/background.png');">
-	    <p>We are creating a Gnome extension which can be installed with ease by a single command. The extension will serve as a hub for the user's notifications, widgets, apps, and system statistics.</p>
+
+	    <!--<p>We are creating a Gnome extension which can be installed with ease by a single command. The extension will serve as a hub for the user's notifications, widgets, apps, and system statistics.</p>
 	    <p>Currently the extension is in the "Minimum Viable Product" phase where the user is able to see the 10 most recent notifications, a small weather widget, and live updates for the CPU and MEM usage system stats.</p>
-	    <p>In future versions, we hope to be able to provide a customizable and intuitive UI, where the user is then able to add/remove widgets and other features, as well as add the extension to the Gnome store.</p>
-    </section>
+	    <p>In future versions, we hope to be able to provide a customizable and intuitive UI, where the user is then able to add/remove widgets and other features, as well as add the extension to the Gnome store.</p> -->
 
+    <section class="our-team">
+    <div class="row">
+            <div class="col-md-3 col-sm-6">
+                <div class="our-team">
+                    <div class="pic">
+                        <a class="img-link">
+                            <img src="https://cdn0.iconfinder.com/data/icons/twitter-ui-flat/48/Twitter_UI-18-512.png">
+                        </a>
+                    </div>
+                    <a  class="title-link">
+                        <h3 class="title">Notifications</h3>
+                    </a>
+                    <span class="post">Get all your notifications neatly organised by app (No clutter!)</span>
+                </div>
+            </div>
+     
+            <div class="col-md-3 col-sm-6">
+                <div class="our-team">
+                    <div class="pic">
+                        <a  class="img-link">
+                            <img src="https://th.bing.com/th/id/R.7d9e17d7f550176246028f927ef8f7ef?rik=FmyLD0qvvsG06A&riu=http%3a%2f%2fwww.icone-png.com%2fpng%2f11%2f10857.png&ehk=eyeIBFKHgqqsvd6VGscdLAWQGn21Z40G5gv9QIez2Ks%3d&risl=&pid=ImgRaw&r=0">
+                        </a>
+                    </div>
+                    <a  class="title-link">
+                        <h3 class="title">Widgets</h3>
+                    </a>
+                    <span class="post">Want something cool like weather or a permanent clipboard? Enable/Disable the widgets as you would like!</span>
+                </div>
+            </div>
+    
+            <div class="col-md-3 col-sm-6">
+                <div class="our-team">
+                    <div class="pic">
+                        <a  class="img-link">
+                            <img src="https://cpuninja.com/wp-content/uploads/2021/06/icon-512.png">
+                        </a>
+                    </div>
+                    <a  class="title-link">
+                        <h3 class="title">System Statistics</h3>
+                    </a>
+                    <span class="post">Its never not cool to know random facts about your machine. Keep looking at your CPU/MEM usage all day!</span>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+                <div class="our-team">
+                    <div class="pic">
+                        <a  class="img-link">
+                            <img src="https://vignette.wikia.nocookie.net/marveltsumtsumgame/images/f/f7/Icon-Discord.png/revision/latest?cb=20170414095635">
+                        </a>
+                    </div>
+                    <a  class="title-link">
+                        <h3 class="title">Community</h3>
+                    </a>
+                    <span class="post">Join our discord to be a part of our community to get latest updates regarding the project!</span>
+                </div>
+            </div>
+    </div>
+</section>
+
+<!-- timeline -->
+<section style="background-color: #C99700;">
+
+<center>
+    <h1> Project Timeline </h1>
+</center>
+<div class="container left">
+    <div class="content">
+      <h2>December, 2021</h2>
+      <h5> The Idea </h5>
+      <p>4 students at the University of Notre Dame wanted to create a one stop extension for notifications, widgets and system stats instead of having to install different extensions for each. Hence, the idea for GnomeHub was born. </p>
+    </div>
+</div>
+
+<div class="container right">
+    <div class="content">
+      <h2>January, 2022</h2>
+      <h5> Planning & Setup </h5>
+      <p>The team got together to plan out the features for the final product. A design template was made and the first step taken was to create a discord for our community along with a GitHub repository to host our code!</p>
+    </div>
+</div>
+
+<div class="container left">
+    <div class="content">
+      <h2>February, 2022</h2>
+      <h5> Initial Product </h5>
+      <p>After a few weeks of exploring gnome and setting up a basic gnome extension, the extension finally displays the information it is supposed to! The team worked to get the notifications, weather data & system stats and store them in the code locally. Next step, UI! </p>
+    </div>
+</div>
+
+<div class="container right">
+    <div class="content">
+      <h2>March, 2022</h2>
+      <h5> Next steps and Improvements </h5>
+      <p>After reviewing project requirements and looking at the progress so far, the team made note of their next steps. They plan to introduce a better UI for notifications, more system stats and more options for widgets allowing better customisation. The next month will be spent working on these elements!</p>
+    </div>
+</div>
+<section>
+
+<!-- footer section start -->
+<footer st>
+    <span>
+        <div style="">Want to check out our repository? Find Us on the Gnome Store and on Github!</button></div>
+    </span>
+</footer>
 
 </body>
 </html>
