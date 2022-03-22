@@ -10,6 +10,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 <body>
 	<nav class="navbarcustom">
@@ -29,10 +30,72 @@
         </div>
     </nav>
 
+    <div class="about-section">
+        <h1 style="margin-top: 10%;color: white">How to Install GnomeHub</h1>
+        <p> ______________________________ </p>
+        <p>GnomeHub is available to install one of two ways. You can either set up the extension directly from the Gnome Extension Store or you could clone our GitHub repository and run our custom installation script to get it set up! Instructions for both are available here.</p>
+    </div>
 
-    <section class="gallery" id="gallery" style="background-image: url('img/background.png');">
+    <section style="background-color: #0C2340;padding-top: 10px;">
+    <div class="w3-container" style="align-self: center;margin-top: 0px;">
+        <div class="w3-bar w3-black">
+            <button class="w3-bar-item w3-button tablink w3-red" onclick="openCity(event,'London')">Gnome Store</button>
+            <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'Paris')">GitHub</button>
+        </div>
+      
+        <div id="London" class="w3-container w3-border city" style="background-color: white;">
+            <h2>Install from the Gnome Extension Store</h2>
+            <p>We are working on getting live on the store as you read this. We will have an update coming soon! Until then please follow the instructions on how to install it through GitHub</p>
+        </div>
+
+        <div id="Paris" class="w3-container w3-border city" style="display:none;background-color: white;padding-bottom: 10px;">
+            <h2>Install from our GitHub Repository</h2>
+            <div style="background-color: #0C2340;border-left: 10px;border-left-color: #C99700;border-style: solid;padding-left: 10px;">
+            <h5 style="color: white">Step 1 - Setting up your terminal:</h5>
+                <p style="margin-left: 10px;color:white">1. Open Terminal on your linux desktop</p>
+                <p style="margin-left: 10px;color:white">2. Run <b>sudo apt get update</b></p>
+                <p style="margin-left: 10px;color:white">3. Make sure you have git installed on your local terminal, if not, instructions are available <a href="https://github.com/git-guides/install-git#:~:text=%20If%20you%20already%20have%20Homwbrew%20installed%2C%20you,the%20installation%20by%20typing%3A%20git%20version.%20More%20" target="_blank" style="color:#C99700">here</a></p>
+                <p style="margin-left: 10px;color:white">4. Once complete, move onto Step 2</p>
+            </div>
+            <br>
+
+            <div style="background-color: #0C2340;border-left: 10px;border-left-color: #C99700;border-style: solid;padding-left: 10px;">
+            <h5 style="color: white">Step 2 - Installing Git Repository:</h5>
+                <p style="margin-left: 10px;color:white">1. Go to <a href="https://github.com/gnome-hub/gnomehub_extension/" target="_blank" style="color:#C99700">https://github.com/gnome-hub/gnomehub_extension/</a> on your browser</p>
+                <p style="margin-left: 10px;color:white">2. Click on the Code button and copy the link under the HTTP tab</p>
+                <img src="https://camo.githubusercontent.com/86c32e4858b8129eecebbac85012efaf36b7cf1a12db388a157b0d1fb87d7d36/68747470733a2f2f3630646576732e636f6d2f696d672f67756964652d67657474696e672d737461727465642d776974682d6769746875622f636c6f6e652e706e67" style="max-width: 75%;padding-left: 10px;">
+                <!-- insert image here -->
+                <p style="margin-left: 10px;color:white">3. Open Terminal on your desktop and run <b>git clone **place copied link here**</b></p>
+                <p style="margin-left: 10px;color:white">4. Once complete, move to Step 3</p>
+            </div>
+            <br>
+
+            <div style="background-color: #0C2340;border-left: 10px;border-left-color: #C99700;border-style: solid;padding-left: 10px;">
+            <h5 style="color: white">Step 3 - Installing the Extension:</h5>
+                <p style="margin-left: 10px;color:white">1. Once the git command runs successfully, cd into the Git Directory</p>
+                <p style="margin-left: 10px;color:white">2. Run <b>./install.sh</b> to install the extension. This will make your desktop restart and temporarily will freeze everything but should not take more than 10-15 seconds.</p>
+                <p style="margin-left: 10px;color:white">3. You're all set!</p>
+            </div>
+        
+        </div>
+    </div>
+
+    <script>
+        function openCity(evt, cityName) {
+            var i, x, tablinks;
+            x = document.getElementsByClassName("city");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < x.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " w3-red";
+        }
+    </script>
     </section>
-
 
 
 </body>
